@@ -1,0 +1,7 @@
+def reverse(x: int) -> int:
+        new_x = list(str(abs(x)))
+        new_x.reverse()
+        if x < 0:
+            return -int("".join(new_x))
+        else:
+            return int("".join(new_x))
